@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login & Registration</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+
+        <!-- Registration Form -->
+        <div class="form-container sign-up">
+            <form id="signupForm" onsubmit="return false;">
+                <h1>Create Account</h1>
+                <p class="subtitle">Register with your personal details</p>
+
+                <input type="text" id="signupName" placeholder="Full Name" required autocomplete="name">
+                <input type="email" id="signupEmail" placeholder="Email Address" required autocomplete="email">
+                <input type="password" id="signupPassword" placeholder="Password (min. 6 chars)" required autocomplete="new-password">
+
+                <button type="button" id="signupBtn" class="primary">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-container sign-in">
+            <form id="loginForm" onsubmit="return false;">
+                <h1>Welcome Back</h1>
+                <p class="subtitle">Login to continue</p>
+
+                <input type="email" id="loginEmail" placeholder="Email Address" required autocomplete="email">
+                <input type="password" id="loginPassword" placeholder="Password" required autocomplete="current-password">
+
+                <a href="#" class="forgot-pass">Forgot Password?</a>
+
+                <button type="button" id="loginBtn" class="primary">Sign In</button>
+            </form>
+        </div>
+
+        <!-- Animated Panel -->
+        <div class="toggle-container">
+            <div class="toggle">
+
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Already have an account?</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Don't have an account?</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
